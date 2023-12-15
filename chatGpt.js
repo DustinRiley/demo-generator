@@ -1,4 +1,3 @@
-// Assuming you're using the OpenAI Node.js SDK
 import OpenAI from "openai";
 import fs from 'fs';
 
