@@ -40,8 +40,9 @@ const createWithThreads = async (openai) => {
       run.id,
     );
     runStatus = runObject.status;
-    console.log("Run status: ", runStatus)
-    console.log("Waiting for seconds: ", count += 5)
+    console.clear();
+    console.log("Run status: ", runStatus);
+    console.log("Waiting for seconds: ", count += 5);
     await new Promise((resolve) => setTimeout(resolve, 5000));
   }
   if (runStatus === "failed") {
@@ -66,7 +67,7 @@ const createWithThreads = async (openai) => {
 
 }
 
-const callChatGptApi = async (processedIssuesString) => {
+const summarizeSprint = async (processedIssuesString) => {
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
   try {
 
@@ -90,5 +91,5 @@ const callChatGptApi = async (processedIssuesString) => {
   }
 };
 
-export default callChatGptApi;
+export default summarizeSprint;
 

@@ -1,6 +1,6 @@
 import getJiraIssues from './jira.js'
 import processJiraIssue from './textProcessing.js'
-import callChatGptApi from './chatGpt.js'
+import summarizeSprint from './chatGpt.js'
 import createPowerpoint from './createPowerPoint.js';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -21,7 +21,7 @@ const main = async () => {
     // fs.writeFileSync('processed_issues.json', JSON.stringify(processedIssues, null, 4), 'utf8');
 
 
-    const response = await callChatGptApi(processedIssuesString);
+    const response = await summarizeSprint(processedIssuesString);
     createPowerpoint(response);
     console.log("done")
   } catch (error) {
