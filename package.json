@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2",
+    "officegen": "^0.6.5",
+    "openai": "^4.20.1",
+    "stream": "^0.0.2",
+    "util": "^0.12.5"
+  },
+  "name": "SprintAssests",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.js"
+  }
+}
