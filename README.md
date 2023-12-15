@@ -1,5 +1,5 @@
 # Purpose
-This project takes a JIRA query to fetch JIRA issues uses chat gtp to summarize each issue and gives an overall summary
+This project takes a JIRA query to fetch JIRA issues uses chatGPT to summarize each issue and gives an overall summary
 Using this data it then creates a powerpoint presentation
 
 # Setup
